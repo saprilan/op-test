@@ -1,0 +1,14 @@
+{
+  "010123456789000": {
+    "nama": "PT Contoh Penjual",
+    "efaktur": {
+      "010.001-21.1234567800": {
+        "tanggal": "2024-05-31",
+        "npwp_pembeli": "020987654321000",
+        "nama_pembeli": "PT Contoh Pembeli",
+        "jumlah_dpp": "10000000.00",
+        "jumlah_ppn": "1000000.00"
+      }
+    }
+  }
+}
