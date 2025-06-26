@@ -45,13 +45,13 @@ public class ValidationService {
 
             // Step 5: Build final result
             String status = deviations.isEmpty() ? "validated_successfully" : "validated_with_deviations";
-            String message = deviations.isEmpty() ? "Data valid dan cocok." : "Terdapat " + deviations.size() + " perbedaan data antara PDF dan DJP.";
+            String message = deviations.isEmpty() ? "Valid and matching data." : "There is " + deviations.size() + " data deviations between PDF and DJP";
 
             ValidationResult validationResult = new ValidationResult(deviations, parsedXml);
             return new ValidationReport(status, message, validationResult);
 
         } catch (Exception e) {
-            return new ValidationReport("error", "Terjadi kesalahan: " + e.getMessage(), null);
+            return new ValidationReport("error", "There is an error: " + e.getMessage(), null);
         }
     }
 

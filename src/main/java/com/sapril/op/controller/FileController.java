@@ -15,14 +15,14 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 
 @RestController
 @RequestMapping("")
-@Tag(name = "PDF & QR Upload API", description = "Endpoints for uploading PDF and extracting text or QR code")
+@Tag(name = "Validate E-Faktur API", description = "Endpoints for validate e-faktur")
 public class FileController {
     @Autowired
     private ValidationService validationService;
 
     @Operation(
-            summary = "Upload PDF and extract text",
-            description = "Uploads a PDF file and returns the extracted text"
+            summary = "Upload E-Faktur PDF",
+            description = "Uploads a E-Faktur file and returns the validation result"
     )
     @PostMapping(value = "/validate-efaktur", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<ValidationReport> validateEfaktur(
