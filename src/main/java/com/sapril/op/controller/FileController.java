@@ -1,7 +1,6 @@
 package com.sapril.op.controller;
 
 import com.sapril.op.model.ValidationReport;
-import com.sapril.op.model.ValidationResult;
 import com.sapril.op.service.ValidationService;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -20,7 +19,6 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 public class FileController {
     @Autowired
     private ValidationService validationService;
-
 
     @Operation(
             summary = "Upload PDF and extract text",
@@ -46,6 +44,4 @@ public class FileController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errorReport);
         }
     }
-
-
 }

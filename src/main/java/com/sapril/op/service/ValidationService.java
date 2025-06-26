@@ -1,7 +1,5 @@
 package com.sapril.op.service;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sapril.op.model.Deviation;
 import com.sapril.op.model.ParsedEfakturData;
 import com.sapril.op.model.ValidationReport;

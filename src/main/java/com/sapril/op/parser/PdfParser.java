@@ -12,7 +12,6 @@ import java.util.regex.Pattern;
 
 @Component
 public class PdfParser {
-
     public ParsedEfakturData parse(MultipartFile file) throws IOException {
         PDDocument document = PDDocument.load(file.getInputStream());
         PDFTextStripper stripper = new PDFTextStripper();
