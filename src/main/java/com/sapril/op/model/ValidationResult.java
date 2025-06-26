@@ -4,11 +4,11 @@ import java.util.List;
 
 public class ValidationResult {
     private List<Deviation> deviations;
-    private ParsedEfakturData validated_data;
+    private ParsedEfakturData validatedData;
 
-    public ValidationResult(List<Deviation> deviations, ParsedEfakturData validated_data) {
+    public ValidationResult(List<Deviation> deviations, ParsedEfakturData validatedData) {
         this.deviations = deviations;
-        this.validated_data = validated_data;
+        this.validatedData = validatedData;
     }
 
     public List<Deviation> getDeviations() {
@@ -19,11 +19,11 @@ public class ValidationResult {
         this.deviations = deviations;
     }
 
-    public ParsedEfakturData getValidated_data() {
-        return validated_data;
+    public ParsedEfakturData getValidatedData() {
+        return validatedData;
     }
 
-    public void setValidated_data(ParsedEfakturData validated_data) {
-        this.validated_data = validated_data;
+    public void setValidatedData(ParsedEfakturData validatedData) {
+        this.validatedData = validatedData;
     }
 }

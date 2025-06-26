@@ -3,12 +3,12 @@ package com.sapril.op.model;
 public class ValidationReport {
     private String status;
     private String message;
-    private ValidationResult validation_results;
+    private ValidationResult validationResults;
 
     public ValidationReport(String status, String message, ValidationResult result) {
         this.status = status;
         this.message = message;
-        this.validation_results = result;
+        this.validationResults = result;
     }
 
     public String getStatus() {
@@ -27,12 +27,12 @@ public class ValidationReport {
         this.message = message;
     }
 
-    public ValidationResult getValidation_results() {
-        return validation_results;
+    public ValidationResult getValidationResults() {
+        return validationResults;
     }
 
-    public void setValidation_results(ValidationResult validation_results) {
-        this.validation_results = validation_results;
+    public void setValidationResults(ValidationResult validationResults) {
+        this.validationResults = validationResults;
     }
 }
 
